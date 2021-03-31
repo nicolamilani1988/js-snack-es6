@@ -36,8 +36,24 @@ function bicycle(){
 
 }
 
-function myFunctionEs2(indMin,indMax,arr){
 
+
+function es2(){
+  // Si scriva una funzione che accetti tre argomenti, un array e
+  // due numeri (a più piccolo di b).
+  // La funzione ritornerà un nuovo array con i valori che hanno
+  // la posizione compresa tra i due numeri
+
+let array = [1,2,3,4,5,6,7,8,9];
+let little = 2;
+let big = 5;
+// 3,4,5,6
+
+myFunctionEs2(little,big,array);
+
+}
+
+function myFunctionEs2(indMin,indMax,arr){
 
   let res = arr.filter((elem,i) =>{
     if(i>=indMin && i<=indMax){
@@ -47,21 +63,6 @@ function myFunctionEs2(indMin,indMax,arr){
 
   console.log(res);
   return res;
-}
-
-function es2(){
-  // Si scriva una funzione che accetti tre argomenti, un array e
-  // due numeri (a più piccolo di b).
-  // La funzione ritornerà un nuovo array con i valori che hanno
-  // la posizione compresa tra i due numeri
-
-let array = [1,2,3,4,5,6,7,8,9];
-let little = 3;
-let big = 7;
-// 4,5,6,7,8
-
-myFunctionEs2(little,big,array);
-
 }
 
 
